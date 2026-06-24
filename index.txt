@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solanki Period Sculpture</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:20px;
+    background:#f4f4f4;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    color:#8B4513;
+}
+
+img{
+    width:100%;
+    max-width:700px;
+    display:block;
+    margin:auto;
+    border-radius:10px;
+}
+
+.language-box{
+    text-align:center;
+    margin:20px 0;
+}
+
+select{
+    padding:10px;
+    font-size:16px;
+}
+
+#description{
+    margin-top:20px;
+    line-height:1.8;
+    text-align:justify;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Solanki Period Sculpture</h1>
+
+<img src="sculpture.jpg" alt="Solanki Sculpture">
+
+<div class="language-box">
+<label><b>Select Language :</b></label>
+<select onchange="changeLanguage(this.value)">
+<option value="gu">ગુજરાતી</option>
+<option value="en">English</option>
+<option value="hi">हिन्दी</option>
+</select>
+</div>
+
+<div id="description">
+
+<h2>ગુજરાતી વર્ણન</h2>
+
+<p>
+આ સોલંકી કાળ (11મી–13મી સદી)ની પાષાણ શિલ્પકૃતિ પાટણના ભદ્રકાળી મંદિરથી પ્રાપ્ત થયેલી છે.
+શિલ્પમાં માનવ આકૃતિઓ અને હરિયાળા વૃક્ષો દર્શાવવામાં આવ્યા છે, જે માનવ અને પ્રકૃતિ વચ્ચેના ગાઢ સંબંધનું પ્રતિનિધિત્વ કરે છે.
+</p>
+
+<p>
+આ કૃતિનો મુખ્ય સંદેશ વૃક્ષ સંરક્ષણ છે. શિલ્પમાં દર્શાવાયેલ દૃશ્ય સૂચવે છે કે વૃક્ષોનું જતન અને પોષણ પોતાના સંતાનોની જેમ કરવું જોઈએ.
+હરિયાળા વૃક્ષો જીવન, સમૃદ્ધિ અને પર્યાવરણીય સંતુલનના પ્રતીક છે.
+</p>
+
+<p>
+સોલંકી યુગની આ કૃતિ દર્શાવે છે કે પ્રકૃતિ પ્રત્યેનો આદર અને પર્યાવરણનું સંરક્ષણ આપણા સાંસ્કૃતિક વારસાનો મહત્વપૂર્ણ ભાગ રહ્યું છે.
+</p>
+
+<p><b>સંદેશ:</b> "વૃક્ષોનું રક્ષણ અને પોષણ તમારા પોતાના બાળકોની જેમ કરો."</p>
+
+</div>
+
+</div>
+
+<script>
+
+const content = {
+
+gu: `
+<h2>ગુજરાતી વર્ણન</h2>
+
+<p>
+આ સોલંકી કાળ (11મી–13મી સદી)ની પાષાણ શિલ્પકૃતિ પાટણના ભદ્રકાળી મંદિરથી પ્રાપ્ત થયેલી છે.
+શિલ્પમાં માનવ આકૃતિઓ અને હરિયાળા વૃક્ષો દર્શાવવામાં આવ્યા છે, જે માનવ અને પ્રકૃતિ વચ્ચેના ગાઢ સંબંધનું પ્રતિનિધિત્વ કરે છે.
+</p>
+
+<p>
+આ કૃતિનો મુખ્ય સંદેશ વૃક્ષ સંરક્ષણ છે. શિલ્પમાં દર્શાવાયેલ દૃશ્ય સૂચવે છે કે વૃક્ષોનું જતન અને પોષણ પોતાના સંતાનોની જેમ કરવું જોઈએ.
+હરિયાળા વૃક્ષો જીવન, સમૃદ્ધિ અને પર્યાવરણીય સંતુલનના પ્રતીક છે.
+</p>
+
+<p>
+સોલંકી યુગની આ કૃતિ દર્શાવે છે કે પ્રકૃતિ પ્રત્યેનો આદર અને પર્યાવરણનું સંરક્ષણ આપણા સાંસ્કૃતિક વારસાનો મહત્વપૂર્ણ ભાગ રહ્યું છે.
+</p>
+
+<p><b>સંદેશ:</b> "વૃક્ષોનું રક્ષણ અને પોષણ તમારા પોતાના બાળકોની જેમ કરો."</p>
+`,
+
+en: `
+<h2>English Description</h2>
+
+<p>
+This stone sculpture belongs to the Solanki Period (11th–13th century CE) and was originally found at Bhadrakali Temple, Patan, Gujarat.
+The artwork depicts human figures and flourishing trees, symbolizing the close relationship between people and nature.
+</p>
+
+<p>
+The sculpture conveys an important message of environmental conservation.
+It suggests that trees should be cared for and nurtured just as one cares for one's own children.
+The lush trees symbolize life, prosperity and ecological balance.
+</p>
+
+<p>
+This remarkable artwork reflects the cultural values of medieval Gujarat, where respect for nature was considered an important social and spiritual responsibility.
+</p>
+
+<p><b>Message:</b> "Protect and nourish trees like your own children."</p>
+`,
+
+hi: `
+<h2>हिन्दी विवरण</h2>
+
+<p>
+यह पत्थर की शिल्पकृति सोलंकी काल (11वीं–13वीं शताब्दी ईस्वी) की है और मूल रूप से पाटन के भद्रकाली मंदिर से प्राप्त हुई है।
+इसमें मानव आकृतियाँ और वृक्ष दर्शाए गए हैं जो मनुष्य और प्रकृति के गहरे संबंध को प्रदर्शित करते हैं।
+</p>
+
+<p>
+यह शिल्प पर्यावरण संरक्षण का महत्वपूर्ण संदेश देता है।
+यह दर्शाता है कि वृक्षों का पालन-पोषण और संरक्षण उसी प्रकार करना चाहिए जैसे अपने बच्चों का किया जाता है।
+</p>
+
+<p>
+यह कलाकृति मध्यकालीन गुजरात की सांस्कृतिक परंपराओं को दर्शाती है, जहाँ प्रकृति के प्रति सम्मान को सामाजिक और आध्यात्मिक कर्तव्य माना जाता था।
+</p>
+
+<p><b>संदेश:</b> "वृक्षों का संरक्षण और पोषण अपने बच्चों की तरह करें।"</p>
+`
+};
+
+function changeLanguage(lang){
+document.getElementById("description").innerHTML = content[lang];
+}
+
+</script>
+
+</body>
+</html>
